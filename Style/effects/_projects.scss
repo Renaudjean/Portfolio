@@ -252,9 +252,16 @@
 }
 svg{
   position: relative;
+  
   width: 150px;
   height: 150px;
   z-index: 1000;
+}
+
+.card {
+  margin: 10px 0;
+  width: 30%;
+ 
 }
 
 svg circle {
@@ -264,8 +271,32 @@ svg circle {
   stroke: #191919;
   stroke-width: 10;
   stroke-linecap: round;
+  transform: translate(5px, 5px);
+  
+}
+svg circle:nth-child(2){
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
 }
 
+.card:nth-child(3) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
+.card:nth-child(4) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
+.card:nth-child(5) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
+.card:nth-child(6) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
+.card:nth-child(7) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
+.card:nth-child(8) svg circle:nth-child(2){
+  stroke: #00ff43;
+}
 
 @keyframes animated-text3{
     from{width: 0;}

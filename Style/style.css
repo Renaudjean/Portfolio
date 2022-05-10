@@ -84,18 +84,18 @@
 }
 
 #stars {
-  -webkit-animation-delay: 156ms;
-          animation-delay: 156ms;
+  -webkit-animation-delay: 347ms;
+          animation-delay: 347ms;
 }
 
 #stars2 {
-  -webkit-animation-delay: 37ms;
-          animation-delay: 37ms;
+  -webkit-animation-delay: 396ms;
+          animation-delay: 396ms;
 }
 
 #stars3 {
-  -webkit-animation-delay: 126ms;
-          animation-delay: 126ms;
+  -webkit-animation-delay: 288ms;
+          animation-delay: 288ms;
 }
 
 .light {
@@ -393,6 +393,11 @@ svg {
   z-index: 1000;
 }
 
+.card {
+  margin: 10px 0;
+  width: 30%;
+}
+
 svg circle {
   width: 100%;
   height: 100%;
@@ -400,6 +405,37 @@ svg circle {
   stroke: #191919;
   stroke-width: 10;
   stroke-linecap: round;
+  -webkit-transform: translate(5px, 5px);
+          transform: translate(5px, 5px);
+}
+
+svg circle:nth-child(2) {
+  stroke-dasharray: 220;
+  stroke-dashoffset: 220;
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.card:nth-child(4) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.card:nth-child(5) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.card:nth-child(6) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.card:nth-child(7) svg circle:nth-child(2) {
+  stroke: #00ff43;
+}
+
+.card:nth-child(8) svg circle:nth-child(2) {
+  stroke: #00ff43;
 }
 
 @-webkit-keyframes animated-text3 {
@@ -852,8 +888,8 @@ body {
   border-bottom: 1px solid currentColor;
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(10) infinite;
           animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(10) infinite;
-  -webkit-animation-delay: 168ms;
-          animation-delay: 168ms;
+  -webkit-animation-delay: 1015ms;
+          animation-delay: 1015ms;
 }
 
 #warning {
@@ -915,8 +951,8 @@ body {
   overflow: hidden;
   -webkit-animation: animated-text1 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text1 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 916ms;
-          animation-delay: 916ms;
+  -webkit-animation-delay: 959ms;
+          animation-delay: 959ms;
 }
 
 .container2 {
@@ -938,8 +974,8 @@ body {
   white-space: nowrap;
   -webkit-animation: animated-text2 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text2 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 1802ms;
-          animation-delay: 1802ms;
+  -webkit-animation-delay: 619ms;
+          animation-delay: 619ms;
 }
 
 @-webkit-keyframes animated-text {
