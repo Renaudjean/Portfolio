@@ -1,14 +1,43 @@
-let close = document.getElementsByClassName("close");
-let projectsOpen = document.getElementsByID("projectOpen");
-let projectOverlay = document.getElementsByID("projectOverlay");*
 
-function openLink() {
-  projectOpen.addEventListener("click",)
-}
+let projectsOpen = document.getElementById("projectOpen");
+let projectOverlay = document.getElementById("projectOverlay");
+let closeOverlay = document.getElementById("closeoverlay");
+let columnProject = document.querySelectorAll(".columnproject");
+
+let competenceOpen = document.getElementById("competence-open");
+let competenceOverlay = document.getElementById("competence-overlay");
+let closeCompetence = document.getElementById("closecompetence");
 
 
+console.log(projectsOpen);
+console.log(columnProject);
 
+projectsOpen.addEventListener("click", function() {
+    projectsOverlay.classList.remove("hidden");
+    for (const columnP of columnProject){
+      console.log(columnP);
 
+      columnP.classList.remove("hidden");
+      }
+  } )
+
+closeOverlay.addEventListener("click", function() {
+   
+    projectsOverlay.classList.add("hidden");
+     for (const columnP of columnProject){
+      columnP.classList.add("hidden");
+    }
+  } )
+
+competenceOpen.addEventListener("click", function() {
+  competenceOverlay.classList.remove("hidden");
+})
+
+closecompetence.addEventListener("click", function() {
+   
+  competenceOverlay.classList.add("hidden");
+
+})
 
 
 

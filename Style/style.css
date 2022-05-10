@@ -84,18 +84,18 @@
 }
 
 #stars {
-  -webkit-animation-delay: 187ms;
-          animation-delay: 187ms;
+  -webkit-animation-delay: 156ms;
+          animation-delay: 156ms;
 }
 
 #stars2 {
-  -webkit-animation-delay: 322ms;
-          animation-delay: 322ms;
+  -webkit-animation-delay: 37ms;
+          animation-delay: 37ms;
 }
 
 #stars3 {
-  -webkit-animation-delay: 205ms;
-          animation-delay: 205ms;
+  -webkit-animation-delay: 126ms;
+          animation-delay: 126ms;
 }
 
 .light {
@@ -242,11 +242,15 @@
   overflow-y: scroll;
   background: repeating-linear-gradient(0deg, white 0px, #111 1px, transparent 2px, transparent 5px);
   background-size: 100% 5px;
-  -webkit-animation: lines 2s ease-out infinite;
-          animation: lines 2s ease-out infinite;
+  -webkit-animation: lines 5s ease-out infinite;
+          animation: lines 5s ease-out infinite;
   width: 1000px;
   height: 400px;
   z-index: 1000;
+}
+
+.container_prof.hidden {
+  visibility: hidden;
 }
 
 .overlay-title {
@@ -261,7 +265,7 @@
   background-color: rgba(63, 108, 255, 0.425);
 }
 
-.background-color {
+.project-color {
   position: absolute;
   top: 0;
   left: 0;
@@ -270,8 +274,8 @@
   z-index: -5;
   width: 100%;
   height: 800px;
-  background: -webkit-gradient(linear, left top, right top, from(#102cce), color-stop(rgba(63, 82, 255, 0.3)), color-stop(rgba(63, 82, 255, 0.3)), to(#102cce));
-  background: linear-gradient(0.25turn, #102cce, rgba(63, 82, 255, 0.3), rgba(63, 82, 255, 0.3), #102cce);
+  background: -webkit-gradient(linear, left top, right top, from(#031ba3), color-stop(rgba(63, 82, 255, 0.3)), color-stop(rgba(63, 82, 255, 0.3)), to(#031ba3));
+  background: linear-gradient(0.25turn, #031ba3, rgba(63, 82, 255, 0.3), rgba(63, 82, 255, 0.3), #031ba3);
 }
 
 .row {
@@ -283,14 +287,20 @@
   height: 75%;
 }
 
-.column {
+.columnproject {
   margin: 0 auto;
   width: 100%;
   height: 100%;
 }
 
+.columnproject.hidden {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
 .project-title {
-  margin: 0 auto;
+  margin: 10px auto;
   font-family: "Exo 2";
   font-size: 25px;
   color: #ffd80e;
@@ -304,6 +314,7 @@
   height: 30px;
   background-image: url(../../assets/Xclose.png);
   background-size: cover;
+  border: 1px solid #ffd80e;
 }
 
 #quizzdom {
@@ -342,6 +353,7 @@
   border-radius: 10px;
   width: 90%;
   height: 90%;
+  background: url("/assets/projects/find a pair.PNG");
 }
 
 #left-arrow-bottom {
@@ -364,6 +376,30 @@
   background: #3fffe8;
   -webkit-transform: rotate(130deg);
           transform: rotate(130deg);
+}
+
+.competence-text {
+  font-family: "Exo 2";
+  color: #ffd80e;
+  font-weight: bold;
+  font-size: 25px;
+  z-index: 200;
+}
+
+svg {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  z-index: 1000;
+}
+
+svg circle {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: #191919;
+  stroke-width: 10;
+  stroke-linecap: round;
 }
 
 @-webkit-keyframes animated-text3 {
@@ -776,7 +812,7 @@ body {
 #arrow {
   position: absolute;
   bottom: -10px;
-  left: 98%;
+  left: 98.8%;
   height: 1px;
   width: 30px;
   background: #3fffe8;
@@ -816,8 +852,8 @@ body {
   border-bottom: 1px solid currentColor;
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(10) infinite;
           animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(10) infinite;
-  -webkit-animation-delay: 438ms;
-          animation-delay: 438ms;
+  -webkit-animation-delay: 168ms;
+          animation-delay: 168ms;
 }
 
 #warning {
@@ -879,8 +915,8 @@ body {
   overflow: hidden;
   -webkit-animation: animated-text1 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text1 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 809ms;
-          animation-delay: 809ms;
+  -webkit-animation-delay: 916ms;
+          animation-delay: 916ms;
 }
 
 .container2 {
@@ -902,8 +938,8 @@ body {
   white-space: nowrap;
   -webkit-animation: animated-text2 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text2 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 912ms;
-          animation-delay: 912ms;
+  -webkit-animation-delay: 1802ms;
+          animation-delay: 1802ms;
 }
 
 @-webkit-keyframes animated-text {
