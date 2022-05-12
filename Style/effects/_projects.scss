@@ -125,12 +125,77 @@
   background-size:100% 5px;
   animation: lines 5s ease-out infinite;
   // mix-blend-mode: color-burn;
-  width: 1000px;
+  width: auto;
+  min-width: 800px;
   height: 400px;
   &.hidden{
     visibility: hidden;
   }
   z-index: 1000;
+}
+
+.container_prof .card{
+  position: relative;
+  width: 250px;
+  background: linear-gradient(0deg, #1b1b1b, #222,#1b1b1b, 0.5 );
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  border-radius: 4px;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s;
+  align-items: center;
+  justify-content: center;
+  border-radius: 70%;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba($primary-color, 0.7);
+  }
+  &:hover .percent .number .level{
+    color: $primary-color;
+    font-size: 35px;
+
+  }
+}
+
+.percent {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000; 
+  background: #222;
+  z-index: 200;
+ .number { 
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   display: flex; 
+   justify-content:center;
+   align-items:center;
+   border-radius: 50%;
+    h2{
+      color: $primary-color;
+      font-family: 'Audiowide';
+      font-weight: 700;
+      font-size: 30px;
+      transition: 0.5s;
+      span{
+        font-size:24px;
+        color: #777;
+            }
+    }
+
+  }
+}
+
+
+
+ .hidden {
+  visibility: hidden;
 }
 
 .overlay-title {
@@ -154,7 +219,7 @@
   bottom:0;
   z-index: -5;
   width: 100%;
-  height: 800px;
+  height: 750px;
   background: linear-gradient(0.25turn, #031ba3, rgba(63, 82, 255, 0.3),  rgba(63, 82, 255, 0.3), #031ba3);
 }
 .row {
@@ -191,7 +256,11 @@
   height: 30px;
   background-image: url(../../assets/Xclose.png);
   background-size: cover;
-  border: 1px solid $primary-color;
+  border: 0.5px solid $primary-color;
+  &:hover{
+    background-image: url(../../assets/Xclose-red.png);
+    border: 0.5px solid rgb(255, 0, 0);
+  }
 }
 
 #quizzdom{
@@ -273,6 +342,7 @@ svg circle {
   stroke-linecap: round;
   transform: translate(5px, 5px);
   
+  
 }
 svg circle:nth-child(2){
   stroke-dasharray: 220;
@@ -280,22 +350,22 @@ svg circle:nth-child(2){
 }
 
 .card:nth-child(3) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #ff0000;
 }
 .card:nth-child(4) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #ea00ff;
 }
 .card:nth-child(5) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #d9ff00;
 }
 .card:nth-child(6) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #1100ff;
 }
 .card:nth-child(7) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #008cff;
 }
 .card:nth-child(8) svg circle:nth-child(2){
-  stroke: #00ff43;
+  stroke: #ffd000;
 }
 
 @keyframes animated-text3{
