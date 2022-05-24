@@ -1,6 +1,7 @@
 @import "effects/colors";
 @import "effects/stars";
 @import "effects/projects";
+@import "effects/about";
 
 *{
     margin: 0;
@@ -10,31 +11,36 @@
 
 // body {
 //     position: relative;
+    
 //     
-//     background-image: url(../assets/backgrounds/Index-BG.jpg);
-//     background-repeat: no-repeat;
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-size: cover;
-//     transform: scale(1.1);
 // }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+html{
+    overflow-x: hidden;
+    scrollbar-width: none;
 }
 
-#bg{
+body{
+    min-height: 100vh;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    background: #000;
+}
+
+#bgindex{
     margin-top: 25px;
     position: absolute;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 100vw;
-    background-attachment: fixed;
-    background-position: center;
-    min-height:100%; 
+    // max-height:100%; 
+    height:100vh; 
     background-image: url(../assets/backgrounds/Index-BG.jpg);
     z-index: -1;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     transform: scale(1.1);
 }
@@ -139,6 +145,8 @@ body{
     width: 30px;
     background: $secondary-color;  
     transform: rotate(45deg);
+    animation: opacity-pointer 3s steps(29,end) 1s 1 normal both;
+    animation-delay: 2500ms;
 }
 #left-arrow{
     position: absolute;
@@ -148,6 +156,9 @@ body{
     width: 30px;
     background: $secondary-color;  
     transform: rotate(45deg);
+    animation: opacity-pointer  2s steps(29,end) 1s 1 normal both;
+    animation-delay: 3000ms;
+    
 }
 
 
@@ -167,7 +178,7 @@ body{
         border-bottom: 1px solid currentColor;
         animation: animated-text 2s steps(29,end) 1s 1 normal both,
                    animated-cursor 600ms steps(10) infinite;
-        animation-delay: random(1500) + ms;
+        animation-delay: 1500ms;
     }
 }
 
@@ -203,7 +214,8 @@ body{
 // End of warning 
 .container1 {
     position: absolute;
-    margin: 10px 15%;
+    margin: 5% 15% 0; 
+ 
     width: fit-content;
     p{
         border-right: solid 3px $tertiary-color;
@@ -212,9 +224,13 @@ body{
         color: $primary-color;
         white-space: nowrap;
         overflow: hidden;  
-        animation: animated-text1 2s steps(29,end) 1s 1 normal both,
+        animation: animated-text 2s steps(29,end) 1s 1 normal both,
         animated-cursor 600ms steps(29,end) infinite;
-        animation-delay: random(2500) + ms;
+        animation-delay: 2000ms;
+    }
+    .under-line{
+        animation: animated-text 2s steps(29,end) 1s 1 normal both;
+        animation-delay: 2000ms;
     }
 }
 .container2 {
@@ -231,25 +247,28 @@ body{
         color: $primary-color;
         overflow: hidden;
         white-space: nowrap;  
-        animation: animated-text2 2s steps(29,end) 1s 1 normal both,
+        animation: animated-text 2s steps(29,end) 1s 1 normal both,
                    animated-cursor 600ms steps(29,end) infinite;
-        animation-delay: random(3000) + ms;
+        animation-delay: 3000ms;
+    }
+    .under-line{
+        animation: animated-text 2s steps(29,end) 1s 1 normal both;
+        animation-delay: 3000ms;
     }
 }
 
 
+
+@keyframes opacity-pointer{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+
 @keyframes animated-text{
     from{width: 0;}
-    to{width: 310px;}
+    to{width: 100%;}
   }
-@keyframes animated-text1{
-    from{width: 0;}
-    to{width: 360px;}
-  }
-  @keyframes animated-text2{
-      from{width: 0;}
-      to{width: 440px;}
-    }
+
  
 @keyframes animated-cursor{
     from{border-right-color: $tertiary-color;}
@@ -263,3 +282,137 @@ body{
         transform: rotate(359deg);
       }
   }
+
+// responsive query here
+  
+@media (max-width: 1200px){
+    .welcomeMessage {
+        margin-top: 15px;
+        font-size: 30px;
+    }
+    .container1{
+        margin: 4% 0 0 6% ;
+
+        p{
+            font-size: 26px;
+        }
+    }
+    #arrow{
+        left: 98.6%;  
+    }
+    .container2 {
+        margin-top: 150px;
+        margin-left:55%;
+        p{
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 860px){
+    .welcomeMessage {
+        margin-top: 15px;
+        font-size: 26px;
+    }
+    .container1{
+        margin: 4% 0 0 6% ;
+
+        p{
+            font-size: 20px;
+        }
+    }
+    #arrow{
+        left: 98.5%;  
+    }
+    .container2 {
+        margin-left:55%;
+        p{
+            font-size: 20px;
+        }
+    }
+}
+@media (max-width: 670px){
+    .welcomeMessage {
+        margin-top: 15px;
+        font-size: 26px;
+    }
+    .containerQuote{
+        margin: 25px auto;
+        #warning{
+           height: 30px; 
+           width: 30px; 
+        }
+        #warning2{
+           height: 30px; 
+           width: 30px; 
+        }
+        a{
+            font-size: 26px;
+        }    
+    }
+    .container1{
+        margin: 2% 0 0 3% ;
+
+        p{
+            font-size: 16px;
+        }
+    }
+    #arrow{
+        left: 98%;  
+    }
+    .container2 {
+
+        margin-left:45%;
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+
+@media (max-width: 530px){
+    body{
+        overflow-y: hidden;
+    }
+
+    .welcomeMessage {
+        margin-top: 30px;
+        font-size: 26px;
+    }
+    .containerQuote{
+        margin: 25px auto;
+        #warning{
+           height: 30px; 
+           width: 30px; 
+        }
+        #warning2{
+           height: 30px; 
+           width: 30px; 
+        }
+        a{
+            font-size: 26px;
+        }    
+    }
+    .container1{
+        margin: 10% 0 0 3% ;
+
+        p{
+            font-size: 20px;
+        }
+    }
+    #arrow{
+        left: 98%;  
+    }
+    .container2 {
+        bottom:175px;
+        margin-left:20%;
+        p{
+            font-size: 20px;
+          
+        }
+    }
+    .header{
+        position: absolute;
+        bottom: 0;
+    }
+
+}

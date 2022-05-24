@@ -10,7 +10,6 @@
     height: 100vh;
     background-attachment: fixed;
     background-position: center;
-    min-height:100%; 
     background-image: url(../assets/backgrounds/Explore-BG.png);
     z-index: -3;
     background-size: cover;
@@ -25,8 +24,8 @@
     height: 100vh;
     -webkit-animation-name: flicker;
             animation-name: flicker;
-    -webkit-animation-duration: 20s;
-            animation-duration: 20s;
+    -webkit-animation-duration: 15s;
+            animation-duration: 15s;
     -webkit-animation-iteration-count: infinite;
             animation-iteration-count: infinite;
     -webkit-animation-timing-function: linear;
@@ -59,12 +58,19 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text3 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 2s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
             animation-delay: 1000ms;
+            &:hover{
+              color: $secondary-color;
+            }
             
-        }
+        }      
     }
+    .under-line{
+      animation: animated-text 2s steps(29,end) 1s 1 normal both;
+      animation-delay: 1000ms;
+  }
 }
 .container4 {
     position: absolute;
@@ -82,11 +88,18 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text4 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 2s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
             animation-delay: 2000ms;
+            &:hover{
+              color: $secondary-color;
+            }
         }
     }
+    .under-line{
+      animation: animated-text 2s steps(29,end) 1s 1 normal both;
+      animation-delay: 2000ms;
+  }
 }
 .container5 {
     position: absolute;
@@ -103,11 +116,18 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text5 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 2s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
             animation-delay: 3000ms;
+            &:hover{
+              color: $secondary-color;
+            }
         }
     }
+    .under-line{
+      animation: animated-text 2s steps(29,end) 1s 1 normal both;
+      animation-delay: 3000ms;
+  }
 }
 
 .container_prof{
@@ -125,8 +145,7 @@
   background-size:100% 5px;
   animation: lines 5s ease-out infinite;
   // mix-blend-mode: color-burn;
-  width: auto;
-  min-width: 800px;
+  width: 800px;
   height: 400px;
   &.hidden{
     visibility: hidden;
@@ -192,9 +211,24 @@
   }
 }
 
+.text{
+  position: relative;
+  margin-top: 20px;
+  color: #777;
+  font-size: 18px;
+  font-weight: 800px;
+  letter-spacing: 1px;
+  font-family: 'Audiowide';
+  text-transform: uppercase;
+  transition: 0.5s;
+}
 
+.card:hover .text {
+  color: $primary-color;
 
- .hidden {
+}
+
+.hidden {
   visibility: hidden;
 }
 
@@ -212,6 +246,17 @@
 }
 
 .project-color{
+  position: absolute;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  z-index: -5;
+  width: 100%;
+  height: 750px;
+  background: linear-gradient(0.25turn, #031ba3, rgba(63, 82, 255, 0.3),  rgba(63, 82, 255, 0.3), #031ba3);
+}
+.project-color2{
   position: absolute;
   top:0;
   left:0;
@@ -257,9 +302,11 @@
   background-image: url(../../assets/Xclose.png);
   background-size: cover;
   border: 0.5px solid $primary-color;
+  border-radius: 10px;
   &:hover{
     background-image: url(../../assets/Xclose-red.png);
     border: 0.5px solid rgb(255, 0, 0);
+    border-radius: 10px;
   }
 }
 
@@ -293,7 +340,17 @@
   height: 90%;
   background: url("/assets/projects/find a pair.PNG");
 }
-
+#arrow2{
+  position: absolute;
+  bottom: -10px;
+  left: 96%;
+  height: 1px;
+  width: 30px;
+  background: $secondary-color;  
+  transform: rotate(45deg);
+  animation: opacity-pointer 3s steps(29,end) 1s 1 normal both;
+  animation-delay: 2500ms;
+}
 #left-arrow-bottom{
     position: absolute;
     bottom: -12px;
@@ -302,6 +359,8 @@
     width: 30px;
     background: $secondary-color;  
     transform: rotate(130deg);
+    animation: opacity-pointer  2s steps(29,end) 1s 1 normal both;
+    animation-delay: 3000ms;
 }
 #left-arrow-bottom2{
     position: absolute;
@@ -311,6 +370,8 @@
     width: 30px;
     background: $secondary-color;  
     transform: rotate(130deg);
+    animation: opacity-pointer  2s steps(29,end) 1s 1 normal both;
+    animation-delay: 3000ms;
 }
 .competence-text{
   font-family: "Exo 2";
@@ -321,9 +382,9 @@
 }
 svg{
   position: relative;
-  
   width: 150px;
   height: 150px;
+  transform: rotate(270deg);
   z-index: 1000;
 }
 
@@ -337,49 +398,325 @@ svg circle {
   width: 100%;
   height: 100%;
   fill: none;
-  stroke: #191919;
+  // stroke: #191919;
   stroke-width: 10;
   stroke-linecap: round;
   transform: translate(5px, 5px);
-  
-  
 }
 svg circle:nth-child(2){
-  stroke-dasharray: 220;
-  stroke-dashoffset: 220;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
 }
 
 .card:nth-child(3) svg circle:nth-child(2){
-  stroke: #ff0000;
+  stroke: url(#linear);
+  rotate: 25deg;
+  animation: skillgauge1 4.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+  }
+  
 }
 .card:nth-child(4) svg circle:nth-child(2){
-  stroke: #ea00ff;
+  stroke:url(#linear);
+  rotate: 25deg;
+  animation: skillgauge2 4.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+  }
 }
 .card:nth-child(5) svg circle:nth-child(2){
-  stroke: #d9ff00;
+  rotate: 25deg;
+  stroke:url(#linear);
+  animation: skillgauge3 4.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+  }
 }
 .card:nth-child(6) svg circle:nth-child(2){
-  stroke: #1100ff;
+  stroke: url(#linear);
+  rotate: 25deg;
+  animation: skillgauge4 3.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+  }
 }
 .card:nth-child(7) svg circle:nth-child(2){
-  stroke: #008cff;
+  stroke: url(#linear);
+  rotate: 25deg;
+  animation: skillgauge5 3.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+}
 }
 .card:nth-child(8) svg circle:nth-child(2){
-  stroke: #ffd000;
+  stroke: url(#linear);
+  rotate: 25deg;
+  animation: skillgauge6 4.5s linear forwards;
+  &.paused {
+  animation-play-state: paused;
+}
 }
 
-@keyframes animated-text3{
-    from{width: 0;}
-    to{width: 285px;}
+@media (max-width: 875px) {
+  .container_prof{
+    width: 600px;
+    overflow-x: hidden;  
+    flex-wrap: column wrap;
   }
-@keyframes animated-text4{
-    from{width: 0;}
-    to{width: 185px;}
+  .columnproject {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  } 
+  .row{
+    margin: 25px auto;
+    flex-direction: column;
   }
-@keyframes animated-text5{
-    from{width: 0;}
-    to{width: 130px;}
+  .project-color{
+    height: 1150px;
   }
+  .project-color2{
+    height: 1022px;
+  }
+  .two{
+    margin: 400px auto 0;
+  }
+  .width-skill{
+    width:525px;
+  }
+}
+@media (max-width: 745px) {
+  #left-arrow-bottom{
+    bottom: -12px;
+    right: 97.5%;
+    width: 30px;
+  }
+    .container4{
+      margin: 300px 15%;
+      a p{
+            font-size: 26px;
+        }
+    }
+
+    .container5{
+      margin-top: 400px;
+      a p{
+        font-size: 26px;
+    }
+    }
+  #left-arrow-bottom2{
+    right: 95%
+  }
+  .container3 {
+    margin-top: 150px;
+    margin-left: 50%;
+    a{
+        text-decoration: none;
+        p{
+            font-size: 26px;         
+        }      
+    }
+  }
+
+  #arrow2{
+    left: 93%;
+  }
+
+  .container_prof{
+    width: 515px;
+    overflow-x: hidden;  
+    flex-wrap: column wrap;
+  }
+  .columnproject {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  } 
+  .row{
+    margin: 25px auto;
+    flex-direction: column;
+  }
+  .project-color{
+    height: 1150px;
+  }
+  .project-color2{
+    height: 1022px;
+  }
+
+  .width-skill{
+    width:515px;
+  }
+
+  .two{
+    margin: 400px auto 0;
+  }
+}
+
+@media (max-width: 590px) {
+
+  #left-arrow-bottom{
+    bottom: -12px;
+    right: 97.5%;
+    width: 30px;
+  }
+    .container4{
+      margin: 300px 15%;
+      a p{
+            font-size: 26px;
+        }
+    }
+
+    .container5{
+      margin-top: 400px;
+      a p{
+        font-size: 26px;
+    }
+    }
+  #left-arrow-bottom2{
+    right: 95%
+  }
+  .container3 {
+    margin-top: 200px;
+    margin-left: 40%;
+    a{
+        text-decoration: none;
+        p{
+            font-size: 26px;         
+        }      
+    }
+  }
+
+  #competence-overlay{
+    align-items: center;
+    justify-content: center;
+  }
+  .container_prof{
+    width: 370px;
+    overflow-x: hidden;  
+    flex-wrap: column wrap;
+  }
+  .columnproject {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  } 
+  .row{
+    margin: 25px auto;
+    flex-direction: column;
+  }
+  .project-color{
+    height: 975px;
+  }
+  .project-color2{
+    height: 2000px;
+  }
+  .two{
+    margin: 250px auto 0;
+  }
+}
+@media (max-width: 430px) {
+
+  #left-arrow-bottom{
+    bottom: -12px;
+    right: 97.5%;
+    width: 30px;
+  }
+    .container4{
+      margin: 300px 15%;
+      a p{
+            font-size: 20px;
+        }
+    }
+
+    .container5{
+      margin-top: 400px;
+       margin-left: 50%;
+      a p{
+        font-size: 26px;
+    }
+    }
+  #left-arrow-bottom2{
+    right: 94.5%
+  }
+  .container3 {
+    margin-top: 200px;
+    margin-left: 35%;
+    a  p{
+            font-size: 22px;         
+        }      
+  }
+
+  #competence-overlay{
+    align-items: center;
+    justify-content: center;
+  }
+  .container_prof{
+    width: 280px;
+    overflow-x: hidden;  
+    flex-wrap: column wrap;
+  }
+  .columnproject {
+  margin: 25px auto;
+  } 
+  .row{
+    margin: 25px auto;
+    flex-direction: column;
+  }
+
+  .two{
+    margin: 150px auto 0;
+  }
+  .overlay-title{
+    font-size: 20px
+  }
+  #extra{
+    width: 275px;
+  }
+}
+
+// To calculate the percentage we need to do 472 - 472 x 0.(add percent here)
+
+@keyframes skillgauge1{
+  100%{
+    stroke-dashoffset: 47.2;
+  }
+}
+@keyframes skillgauge2{
+  100%{
+    stroke-dashoffset: 118;
+  }
+}
+@keyframes skillgauge3{
+  100%{
+    stroke-dashoffset: 165.2;
+  }
+}
+@keyframes skillgauge4{
+  100%{
+    stroke-dashoffset: 118;
+  }
+}
+@keyframes skillgauge5{
+  100%{
+    stroke-dashoffset: 141.6;
+  }
+}
+@keyframes skillgauge6{
+  100%{
+    stroke-dashoffset: 94.4;
+  }
+}
+
+
+@keyframes animated-text{
+    from{width: 0;}
+    to{width: 100%;}
+  }
+
+  @keyframes opacity-pointer{
+    from{opacity: 0;}
+    to{opacity: 1;}
+  }
+
+
 
   @keyframes flicker {
     from {
@@ -455,10 +792,10 @@ svg circle:nth-child(2){
         opacity: 0.6;
       }
       96% {
-        opacity: 0.3;
+        opacity: 0.7;
       }
       to {
-        opacity: 0.5;
+        opacity: 0.8;
       }
   }
 

@@ -1,0 +1,479 @@
+@import "colors";
+
+
+#about {
+    overflow: scroll;
+}
+#bgabout{
+    background-image: url(../../assets/backgrounds/aboutbg4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    z-index: -100;
+}
+
+.container-about {
+    position: absolute;
+    display: flex;
+    background-color: rgba(10, 10, 10, 0.5);
+    top: 50%;
+    transform: translateY(-50%);
+    height: 300px;
+    width: 100vw;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#section1bg{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  z-index: 10;
+  background: url(../../assets/backgrounds/moonwolf.PNG) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll;
+  background-position: center;
+    // margin: 0 25px;
+    transition: transform 2s ease-in-out 500ms;
+    position: absolute;
+    overflow: hidden;
+    &:hover{
+      background-attachment: fixed;
+      transition: transform 1s ease-in-out 250ms;
+      transform: translate(-20px,-550px);
+      
+    }
+}
+#section2bg{
+  content: "";
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: -50%;
+  left: -50%;
+  background: url(../../assets/backgrounds/about-BG2.png) ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+    // margin: 0 25px;
+    transition: transform 2s ease-in-out 250ms;
+    position: absolute;
+    overflow: hidden;
+    z-index: 10;
+}
+
+#section3bg{
+    background: url(../../assets/backgrounds/contactme.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    object-position: 70% 15%;
+    width: 250px;
+    height: 100%;
+    z-index: 10;
+    position: absolute;
+    transition: transform 0.20s ease-in-out 250ms;
+}
+// Section 1
+.personality{
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 20px;
+  width: auto;
+  font-weight: lighter;
+  font-family: 'Audiowide', sans-serif;
+  transform: skew(-25deg); /* UNSKEW */
+  color: $primary-color;
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+}
+.personality-info{
+  display: block;
+  margin: 10px 10px;
+  font-size: 15px;
+  color: $primary-color;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+  transform: skew(-25deg); /* UNSKEW */
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+   width: auto;
+}
+
+// Section 2
+.frontiers{
+  margin: 5px 10px;
+  font-size: 20px;
+  width:auto;
+  font-weight: lighter;
+  font-family: 'Audiowide', sans-serif;
+  color: $primary-color;
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+}
+.frontier-info{
+  justify-self: right;
+  font-size: 15px;
+  width: auto;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+  margin: 5px 10px;
+  text-justify: distribute;
+  color: $primary-color;
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+  padding: 10px 100px;
+}
+
+// Section 3
+.contact{
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  margin: 5px 10px;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Audiowide', sans-serif;
+  transform: skew(25deg); /* UNSKEW */
+  color: $primary-color;
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+  
+}
+.contact-info{
+  margin: 5px 10px;
+  font-size: 15px;
+  color: $primary-color;
+  font-weight: bold;
+  font-family: 'Exo 2', sans-serif;
+  transform: skew(25deg); /* UNSKEW */
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+}
+.links{
+  list-style-type: none;
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 15px 20px;
+  font-family: 'Exo 2', sans-serif;
+  transform: skew(25deg); /* UNSKEW */
+  color: inherit;
+  opacity: 0;
+  transition: opacity 0.20s ease-in-out;
+  li{
+    text-decoration: none;
+    color: $primary-color;
+  }
+  a{
+    text-decoration: none;
+    color: $primary-color;
+  }
+}
+
+
+
+.skewed-container{
+    background-color: rgba(0, 60, 255, 0.5);
+    width: 250px;
+    margin: 0 25px;
+    position: relative;
+    overflow: hidden;
+    
+    transition: transform 1s ease-in-out 1s;
+    &:hover{
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    display: flex;
+    overflow-y: auto;
+ 
+  }
+    &:nth-child(1){
+       transform: skewX(25deg);
+      transition: width 2s ease-in-out 50ms;
+      padding-right: 50px;
+      padding-left: 30px;
+      overflow-wrap: break-word;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      &:hover{        
+        width: 850px;
+        #section1bg{
+          background-attachment: fixed;
+          overflow-wrap: break-word;
+          box-sizing: border-box;
+          transition: transform 1s ease-in-out 50ms;
+          transform: translate(-20px,-700px);
+          
+        }
+        .personality{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+        .personality-info{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(2){
+      width: 350px;
+      margin: 0 -10px;
+      transform: skewX(0);
+      clip-path: polygon(30% 100%, 70% 100%, 100% 0%, 0% 0%);
+      text-align: center;
+      transition: width 1s ease-in-out 50ms;
+      overflow-wrap: break-word;
+      padding: 10px 80px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      &:hover{        
+        width: 850px;
+     
+        #section2bg{
+          transform: translateY(-700px);
+          transition: transform 1s ease-in-out 50ms;
+        }
+        .frontiers{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+        .frontier-info{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+      }
+    }
+    &:nth-child(3){
+      transform: skewX(-25deg);
+      transition: width 2s;
+      overflow-wrap: break-word;
+      box-sizing: border-box;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      &:hover{        
+        width: 800px;
+        #section3bg{
+        background-attachment: fixed;
+        overflow-wrap: break-word;
+        box-sizing: border-box;
+        transition: transform 0.5s ease-in-out 50ms;
+        transform: translate(20px,-700px);
+        }
+        .contact{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+        .contact-info{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+        .links{
+          transition: opacity 1s linear 1s;
+          opacity: 1;
+        }
+      }
+    }
+}
+
+@media (max-width: 900px){
+  .skewed-container{
+    min-width: 10px;
+    width: 150px;
+    &:nth-child(2){
+      width: 250px;
+      margin: 0 -10px;
+      padding: 10px 80px;
+      &:hover{        
+        width: 950px;
+        }
+   }
+   &:nth-child(3){
+    padding-right: 80px;
+   }
+  }
+}
+@media (max-width: 800px){
+  .container-about{
+  padding-left: 20px;
+  padding-right: 20px;
+    height: 400px
+  }
+  // Section 1
+.personality{
+  font-size: 16px;
+}
+.personality-info{
+  font-size: 14px;
+}
+
+// Section 2
+.frontiers{
+  font-size: 16px;
+}
+.frontier-info{
+  font-size: 14px;
+  width: auto;
+  padding: 5px 25px;
+}
+
+}
+@media (max-width: 700px){
+  .container-about{
+    height:75%;
+    flex-direction: column;
+    padding: 0;
+    
+  }
+
+  .skewed-container{
+    padding: 0;
+    &:nth-child(1){
+      padding: 10px;
+      margin: 0;
+      width: 100%;
+      transform: skewX(0deg);
+      &:hover {
+        height: 450px;
+        width: 100%;
+    }
+  }
+    &:nth-child(2){
+      padding: 10px;
+      margin: 0;
+      clip-path: none;
+      width: 100%;
+      min-height: 10px;
+      &:hover {
+        height: 450px;
+        width: 100%;
+    }
+    }
+      &:nth-child(3){
+        margin: 0;
+        padding: 10px;
+        width: 100%;
+        min-height: 10px;
+        transform: skewX(0deg);
+        &:hover {
+          height: 450px;
+          width: 100%;
+      }
+  }
+}
+#section3bg{
+  background-position: center;
+  background-size: 100%;
+  width: 100%;
+}
+.personality{
+  width: 100%;
+  word-break:break-word;
+  transform: skew(0);
+}
+  .personality-info{
+    transform: skew(0);
+    width: 100%;
+    word-break:break-word;
+  }
+  .contact{
+    transform: skew(0);
+    width: 100%;
+    word-break:break-word;
+  }
+  .contact-info{
+    transform: skew(0);
+    width: 100%;
+    word-break:break-word;
+  }
+  .links{
+    transform: skew(0);
+  }
+}
+
+// Rain animation
+.rain {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+  }
+  
+  .rain .back-row {
+    display: none;
+    z-index: 1;
+    bottom: 60px;
+    opacity: 0.5;
+  }
+
+  
+.drop {
+    position: absolute;
+    bottom: 100%;
+    width: 15px;
+    height: 120px;
+    pointer-events: none;
+    animation: drop 0.5s linear infinite;
+  }
+  
+  @keyframes drop {
+    0% {
+      transform: translateY(0vh);
+    }
+    75% {
+      transform: translateY(90vh);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+  @keyframes extend {
+    0% {
+      height: 250px;
+    }
+    75% {
+      height: 350px;
+    }
+    100% {
+      height: 450px;
+    }
+  }
+  
+  .stem {
+    width: 1px;
+    height: 60%;
+    margin-left: 7px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.25));
+    animation: stem 0.5s linear infinite;
+  }
+  
+  @keyframes stem {
+    0% {
+      opacity: 1;
+    }
+    65% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
