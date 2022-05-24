@@ -5,15 +5,8 @@
 
 *{
     margin: 0;
-    padding: 0;
+    padding: 0
 }
-
-
-// body {
-//     position: relative;
-    
-//     
-// }
 
 html{
     overflow-x: hidden;
@@ -28,14 +21,18 @@ body{
     position: relative;
     background: #000;
 }
-
+#index-html{
+    overflow: hidden;
+}
+#index-body{
+    overflow: hidden;
+}
 #bgindex{
     margin-top: 25px;
     position: absolute;
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100vw;
-    // max-height:100%; 
     height:100vh; 
     background-image: url(../assets/backgrounds/Index-BG.jpg);
     z-index: -1;

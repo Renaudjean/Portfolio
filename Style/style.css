@@ -84,18 +84,18 @@
 }
 
 #stars {
-  -webkit-animation-delay: 325ms;
-          animation-delay: 325ms;
+  -webkit-animation-delay: 462ms;
+          animation-delay: 462ms;
 }
 
 #stars2 {
-  -webkit-animation-delay: 7ms;
-          animation-delay: 7ms;
+  -webkit-animation-delay: 229ms;
+          animation-delay: 229ms;
 }
 
 #stars3 {
-  -webkit-animation-delay: 487ms;
-          animation-delay: 487ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .light {
@@ -1224,7 +1224,7 @@ svg circle:nth-child(2) {
 }
 
 #bgabout {
-  background-image: url(../../assets/backgrounds/aboutbg4.jpg);
+  background-image: url(../assets/backgrounds/aboutbg4.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -1260,7 +1260,7 @@ svg circle:nth-child(2) {
   top: -50%;
   left: -50%;
   z-index: 10;
-  background: url(../../assets/backgrounds/moonwolf.PNG);
+  background: url(../assets/backgrounds/moonwolf.PNG);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: scroll;
@@ -1290,7 +1290,7 @@ svg circle:nth-child(2) {
   height: 200%;
   top: -50%;
   left: -50%;
-  background: url(../../assets/backgrounds/about-BG2.png);
+  background: url(../assets/backgrounds/about-BG2.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1305,7 +1305,7 @@ svg circle:nth-child(2) {
 }
 
 #section3bg {
-  background: url(../../assets/backgrounds/contactme.jpg);
+  background: url(../assets/backgrounds/contactme.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1876,6 +1876,14 @@ body {
   overflow-y: auto;
   position: relative;
   background: #000;
+}
+
+#index-html {
+  overflow: hidden;
+}
+
+#index-body {
+  overflow: hidden;
 }
 
 #bgindex {

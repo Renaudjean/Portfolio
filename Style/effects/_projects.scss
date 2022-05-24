@@ -15,7 +15,7 @@
     background-size: cover;
     transform: scale(1.1);
 }
-
+// Lamp is for the background light with a breath effect
   .lamp {
     margin:0 auto;
     text-align:center;
@@ -42,7 +42,7 @@
   
   }
   
-
+// Container 3 is for Professional projects
 .container3 {
     position: absolute;
     margin-top: 200px;
@@ -72,6 +72,7 @@
       animation-delay: 1000ms;
   }
 }
+// Container is for skills 
 .container4 {
     position: absolute;
     margin: 200px 15%;
@@ -101,6 +102,7 @@
       animation-delay: 2000ms;
   }
 }
+// Container 5 is for about me
 .container5 {
     position: absolute;
     margin-top: 450px;
@@ -129,7 +131,7 @@
       animation-delay: 3000ms;
   }
 }
-
+// Container Professionalis the overlay that has all the projects
 .container_prof{
   position: absolute;
   display: flex;
@@ -144,7 +146,6 @@
   background: repeating-linear-gradient(0deg, rgb(255, 255, 255) 0px, #111 1px, transparent 2px, transparent 5px);
   background-size:100% 5px;
   animation: lines 5s ease-out infinite;
-  // mix-blend-mode: color-burn;
   width: 800px;
   height: 400px;
   &.hidden{
@@ -152,7 +153,7 @@
   }
   z-index: 1000;
 }
-
+// This is for the cards of the project
 .container_prof .card{
   position: relative;
   width: 250px;
@@ -227,7 +228,7 @@
   color: $primary-color;
 
 }
-
+// Hidden class is used to hide the overlays and cards. Cards do have the hidden class after noticing a bug within the program that gave them a delay before disappearing
 .hidden {
   visibility: hidden;
 }
@@ -293,6 +294,7 @@
   font-size: 25px;
   color: $primary-color;
 }
+// close button
 .close{
   position: absolute;
   right: 0;
@@ -340,6 +342,7 @@
   height: 90%;
   background: url("/assets/projects/find a pair.PNG");
 }
+// all arrows are the point of the underlines
 #arrow2{
   position: absolute;
   bottom: -10px;
@@ -393,12 +396,11 @@ svg{
   width: 30%;
  
 }
-
+// All svg is used as a gauge for my skills, i call upon them as childrens instead of giving them a dedicated id
 svg circle {
   width: 100%;
   height: 100%;
   fill: none;
-  // stroke: #191919;
   stroke-width: 10;
   stroke-linecap: round;
   transform: translate(5px, 5px);
@@ -457,7 +459,7 @@ svg circle:nth-child(2){
   animation-play-state: paused;
 }
 }
-
+// Responsive starts here
 @media (max-width: 875px) {
   .container_prof{
     width: 600px;
