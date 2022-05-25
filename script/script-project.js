@@ -15,7 +15,7 @@ let skillCard= document.querySelectorAll(".card");
 let paused= document.querySelectorAll(".paused");
 
 
-
+// This function will make the overlay appear when clicking on the prompts
 projectsOpen.addEventListener("click", function() {
     projectsOverlay.classList.remove("hidden");
     for (const columnP of columnProject){
@@ -25,6 +25,33 @@ projectsOpen.addEventListener("click", function() {
       }
   } )
 
+  competenceOpen.addEventListener("click", function() {
+    competenceOverlay.classList.remove("hidden");
+    for (const sc of skillCard){
+      sc.classList.remove("hidden");
+      }
+    for (const c of circles){
+      c.classList.remove("hidden");
+      }
+    for (const l of level){
+      l.classList.remove("hidden");
+      }
+    for (const t of text){
+      t.classList.remove("hidden");
+      }
+    for (const p of percent){
+      p.classList.remove("hidden");
+      }
+    for (const n of number){
+      n.classList.remove("hidden");
+      }
+    for (const p of paused){
+      p.classList.remove("paused");
+      }
+  })
+
+
+// This function will make the overlay disappear when clicking on the prompts
 closeOverlay.addEventListener("click", function() {
    
     projectsOverlay.classList.add("hidden");
@@ -33,30 +60,6 @@ closeOverlay.addEventListener("click", function() {
     }
   } )
 
-competenceOpen.addEventListener("click", function() {
-  competenceOverlay.classList.remove("hidden");
-  for (const sc of skillCard){
-    sc.classList.remove("hidden");
-    }
-  for (const c of circles){
-    c.classList.remove("hidden");
-    }
-  for (const l of level){
-    l.classList.remove("hidden");
-    }
-  for (const t of text){
-    t.classList.remove("hidden");
-    }
-  for (const p of percent){
-    p.classList.remove("hidden");
-    }
-  for (const n of number){
-    n.classList.remove("hidden");
-    }
-  for (const p of paused){
-    p.classList.remove("paused");
-    }
-})
 
 closecompetence.addEventListener("click", function() {
    

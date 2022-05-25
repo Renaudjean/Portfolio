@@ -84,18 +84,18 @@
 }
 
 #stars {
-  -webkit-animation-delay: 462ms;
-          animation-delay: 462ms;
+  -webkit-animation-delay: 105ms;
+          animation-delay: 105ms;
 }
 
 #stars2 {
-  -webkit-animation-delay: 229ms;
-          animation-delay: 229ms;
+  -webkit-animation-delay: 368ms;
+          animation-delay: 368ms;
 }
 
 #stars3 {
-  -webkit-animation-delay: 300ms;
-          animation-delay: 300ms;
+  -webkit-animation-delay: 311ms;
+          animation-delay: 311ms;
 }
 
 .light {
@@ -457,14 +457,14 @@
   top: 0;
   width: 30px;
   height: 30px;
-  background-image: url(../../assets/Xclose.png);
+  background-image: url(../assets/Xclose.png);
   background-size: cover;
   border: 0.5px solid #ffd80e;
   border-radius: 10px;
 }
 
 .close:hover {
-  background-image: url(../../assets/Xclose-red.png);
+  background-image: url(../assets/Xclose-red.png);
   border: 0.5px solid red;
   border-radius: 10px;
 }
@@ -1610,12 +1610,15 @@ svg circle:nth-child(2) {
   -webkit-transition: opacity 1s linear 1s;
   transition: opacity 1s linear 1s;
   opacity: 1;
+  padding-left: 5px;
 }
 
 .skewed-container:nth-child(3):hover .links {
   -webkit-transition: opacity 1s linear 1s;
   transition: opacity 1s linear 1s;
   opacity: 1;
+  font-style: italic;
+  text-decoration: underline;
 }
 
 @media (max-width: 900px) {
