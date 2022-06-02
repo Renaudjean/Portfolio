@@ -58,9 +58,9 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 1s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
-            animation-delay: 1000ms;
+            animation-delay: 600ms;
             &:hover{
               color: $secondary-color;
             }
@@ -68,8 +68,8 @@
         }      
     }
     .under-line{
-      animation: animated-text 2s steps(29,end) 1s 1 normal both;
-      animation-delay: 1000ms;
+      animation: animated-text 1s steps(29,end) 1s 1 normal both;
+      animation-delay: 600ms;
   }
 }
 // Container is for skills 
@@ -89,17 +89,17 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 1.5s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
-            animation-delay: 2000ms;
+            animation-delay: 1500ms;
             &:hover{
               color: $secondary-color;
             }
         }
     }
     .under-line{
-      animation: animated-text 2s steps(29,end) 1s 1 normal both;
-      animation-delay: 2000ms;
+      animation: animated-text 1.5s steps(29,end) 1s 1 normal both;
+      animation-delay: 1500ms;
   }
 }
 // Container 5 is for about me
@@ -118,17 +118,17 @@
             color: $primary-color;
             overflow: hidden;
             white-space: nowrap;  
-            animation: animated-text 2s steps(29,end) 1s 1 normal both,
+            animation: animated-text 1.8s steps(29,end) 1s 1 normal both,
                         animated-cursor 600ms steps(29,end) infinite;
-            animation-delay: 3000ms;
+            animation-delay: 2000ms;
             &:hover{
               color: $secondary-color;
             }
         }
     }
     .under-line{
-      animation: animated-text 2s steps(29,end) 1s 1 normal both;
-      animation-delay: 3000ms;
+      animation: animated-text 1.8s steps(29,end) 1s 1 normal both;
+      animation-delay: 2000ms;
   }
 }
 // Container Professionalis the overlay that has all the projects

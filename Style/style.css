@@ -84,18 +84,18 @@
 }
 
 #stars {
-  -webkit-animation-delay: 274ms;
-          animation-delay: 274ms;
+  -webkit-animation-delay: 490ms;
+          animation-delay: 490ms;
 }
 
 #stars2 {
-  -webkit-animation-delay: 366ms;
-          animation-delay: 366ms;
+  -webkit-animation-delay: 364ms;
+          animation-delay: 364ms;
 }
 
 #stars3 {
-  -webkit-animation-delay: 438ms;
-          animation-delay: 438ms;
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
 }
 
 .light {
@@ -161,10 +161,10 @@
   color: #ffd80e;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation: animated-text 1s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+          animation: animated-text 1s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .container3 a p:hover {
@@ -172,10 +172,10 @@
 }
 
 .container3 .under-line {
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 1000ms;
-          animation-delay: 1000ms;
+  -webkit-animation: animated-text 1s steps(29, end) 1s 1 normal both;
+          animation: animated-text 1s steps(29, end) 1s 1 normal both;
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
 }
 
 .container4 {
@@ -200,10 +200,10 @@
   color: #ffd80e;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation: animated-text 1.5s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+          animation: animated-text 1.5s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .container4 a p:hover {
@@ -211,10 +211,10 @@
 }
 
 .container4 .under-line {
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation: animated-text 1.5s steps(29, end) 1s 1 normal both;
+          animation: animated-text 1.5s steps(29, end) 1s 1 normal both;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .container5 {
@@ -238,10 +238,10 @@
   color: #ffd80e;
   overflow: hidden;
   white-space: nowrap;
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation: animated-text 1.8s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+          animation: animated-text 1.8s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .container5 a p:hover {
@@ -249,10 +249,10 @@
 }
 
 .container5 .under-line {
-  -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
-          animation: animated-text 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation: animated-text 1.8s steps(29, end) 1s 1 normal both;
+          animation: animated-text 1.8s steps(29, end) 1s 1 normal both;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .container_prof {
@@ -2037,8 +2037,8 @@ body {
           transform: rotate(45deg);
   -webkit-animation: opacity-pointer 2s steps(29, end) 1s 1 normal both;
           animation: opacity-pointer 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 .containerQuote {
@@ -2125,15 +2125,15 @@ body {
   overflow: hidden;
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .container1 .under-line {
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
           animation: animated-text 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 2000ms;
-          animation-delay: 2000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .container2 {
@@ -2155,15 +2155,15 @@ body {
   white-space: nowrap;
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
           animation: animated-text 2s steps(29, end) 1s 1 normal both, animated-cursor 600ms steps(29, end) infinite;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 .container2 .under-line {
   -webkit-animation: animated-text 2s steps(29, end) 1s 1 normal both;
           animation: animated-text 2s steps(29, end) 1s 1 normal both;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
+  -webkit-animation-delay: 2000ms;
+          animation-delay: 2000ms;
 }
 
 @keyframes opacity-pointer {

@@ -154,7 +154,7 @@ body{
     background: $secondary-color;  
     transform: rotate(45deg);
     animation: opacity-pointer  2s steps(29,end) 1s 1 normal both;
-    animation-delay: 3000ms;
+    animation-delay: 2000ms;
     
 }
 
@@ -223,11 +223,11 @@ body{
         overflow: hidden;  
         animation: animated-text 2s steps(29,end) 1s 1 normal both,
         animated-cursor 600ms steps(29,end) infinite;
-        animation-delay: 2000ms;
+        animation-delay: 1500ms;
     }
     .under-line{
         animation: animated-text 2s steps(29,end) 1s 1 normal both;
-        animation-delay: 2000ms;
+        animation-delay: 1500ms;
     }
 }
 .container2 {
@@ -246,11 +246,11 @@ body{
         white-space: nowrap;  
         animation: animated-text 2s steps(29,end) 1s 1 normal both,
                    animated-cursor 600ms steps(29,end) infinite;
-        animation-delay: 3000ms;
+        animation-delay: 1500ms;
     }
     .under-line{
         animation: animated-text 2s steps(29,end) 1s 1 normal both;
-        animation-delay: 3000ms;
+        animation-delay: 2000ms;
     }
 }
 
